@@ -3190,6 +3190,22 @@ struct Message {
     Eq,
     PartialEq
 )]
+struct Reward {
+    points: Box<_CdkFloat64>,
+    Activity: Box<String>,
+}
+#[derive(
+    serde::Deserialize,
+    Debug,
+    candid::CandidType,
+    Clone,
+    CdkActTryIntoVmValue,
+    CdkActTryFromVmValue,
+    Ord,
+    PartialOrd,
+    Eq,
+    PartialEq
+)]
 struct MessagePayload {
     title: Box<String>,
     body: Box<String>,

@@ -9,7 +9,10 @@ type Message = Record<{
     createdAt: nat64;
     updatedAt: Opt<nat64>;
 }>
-
+type Reward = Record <{
+    points: number;
+    Activity: string;
+}>;
 type MessagePayload = Record<{
     title: string;
     body: string;
